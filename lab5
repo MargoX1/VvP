@@ -1,47 +1,84 @@
-#print('1. Эта программа ищет расстояние между двумя точками с заданными координатами.')
-#x1 = float(input('Введите координату для первой точки по оси x:'))
-#y1 = float(input('Введите координату для первой точки по оси y:'))
-#x2 = float(input('Введите координату для второй точки по оси x:'))
-#y2 = float(input('Введите координату для второй точки по оси y:'))
-#distance = ((x2-x1)**2+(y2-y1)**2)**0.5
-#print('Расстояние между двумя точками с координатами (', x1, ';', y1, ') и (', x2, ';', y2, ') равно ', distance)
+#include <stdio.h>
+#include <math.h>
 
-#print('2. Эта программа считает длины отрезков АС и ВС, расположенных на одной числовой оси, и их сумму.')
-#A = float(input('Введите числовое значение для точки А: '))
-#B = float(input('Введите числовое значение для точки В: '))
-#C = float(input('Введите числовое значение для точки С: '))
-#AC = abs(C - A)
-#BC = abs(C - B)
-#summ = AC + BC
-#print('Длина AC равна', AC, ', длина BC равна', BC, ', а их сумма равна', summ)
+int main()
+{
+    int x1, x2, y1, y2;
+    double distance;
+    printf("1. This program searches for the distance between two points with the coordinates.\n");
+    printf("x1 = ");
+    scanf_s("%d", &x1);
+    printf("y1 = ");
+    scanf_s("%d", &y1);
+    printf("x2 = ");
+    scanf_s("%d", &x2);
+    printf("y2 = ");
+    scanf_s("%d", &y2);
+    distance = sqrt(pow((x2 - x1), 2) + pow((y2 - y1), 2));
+    printf("Distance = %lf \n", distance);
 
-#print('3. Эта программа считает произведение длин отрезков АС и ВС, расположенных на одной числовой оси.')
-#A = float(input('Введите числовое значение для точки А: '))
-#B = float(input('Введите числовое значение для точки В: '))
-#C = float(input('Введите числовое значение для точки С (точка расположена между А и В): '))
-#ans = abs(C - A) * abs(C - A)
-#print('Произведение длин отрезков равно ', ans)
+    int A, B, C, summ, AC, BC;
+    printf("2. This program counts the lengths of the AC and BC segments located on the same numeric axis and their sum.\n");
+    printf("A = ");
+    scanf_s("%d", &A);
+    printf("B = ");
+    scanf_s("%d", &B);
+    printf("C = ");
+    scanf_s("%d", &C);
+    AC = fabs(C - A);
+    BC = fabs(C - B);
+    summ = AC + BC;
+    printf("AC = %d, BC = %d, summ = %d \n", AC, BC, summ);
 
-#print('4. Даны координаты двух противоположных вершин прямоугольника: (x1, y1), (x2, y2). Стороны прямоугольника параллельны осям координат.')
-#print('Эта программа ищет периметр и площадь данного прямоугольника.')
-#x1 = float(input('Введите координату для первой вершины по оси x:'))
-#y1 = float(input('Введите координату для первой вершины по оси y:'))
-#x2 = float(input('Введите координату для второй вершины по стороне x:'))
-#y2 = float(input('Введите координату для второй вершины по стороне y:'))
-#a = abs(x2-x1)
-#b = abs(y2-y1)
-#print('Периметр равен ', 2*(a+b), ',', 'площадь равна ', a*b)
+   int A, B, C, ans, AC, BC;
+    printf("3. This program counts the lengths of the AC and BC segments located on the same numeric axis and their sum.\n");
+    printf("A = ");
+    scanf_s("%d", &A);
+    printf("B = ");
+    scanf_s("%d", &B);
+    printf("The point C is located between A and B. C = ");
+    scanf_s("%d", &C);
+    AC = fabs(C - A);
+    BC = fabs(C - B);
+    ans = AC * BC;
+    printf("The product of the lengths of the segments is %d \n", ans);
 
-print('5. Эта программа ищет площадь и периметр треугольника, для вершин которого задаются координаты.')
-x1 = float(input('Введите координату для первой вершины по оси x:'))
-y1 = float(input('Введите координату для первой вершины по оси y:'))
-x2 = float(input('Введите координату для второй вершины по стороне x:'))
-y2 = float(input('Введите координату для второй вершины по стороне y:'))
-x3 = float(input('Введите координату для третьей вершины по стороне x:'))
-y3 = float(input('Введите координату для третьей вершины по стороне y:'))
-a = ((x2-x1)**2+(y2-y1)**2)**0.5
-b = ((x3-x2)**2+(y3-y2)**2)**0.5
-c = ((x1-x3)**2+(y1-y3)**2)**0.5
-p = a + b + c
-s = 0.5*abs(x1*(y2-y3)+x2*(y3-y1)+x3*(y1-y2))
-print('Периметр равен ', p, ',', 'площадь равна ', s)
+    int x1, x2, y1, y2, a, b, P, S;
+    printf("4. The coordinates of two opposite vertices of the rectangle are given: (x1, y1), (x2, y2). The sides of the rectangle are parallel to the coordinate axes.\n");
+    printf("This program searches for the perimeter and area of a given rectangle.\n");
+    printf("x1 = ");
+    scanf_s("%d", &x1);
+    printf("y1 = ");
+    scanf_s("%d", &y1);
+    printf("x2 = ");
+    scanf_s("%d", &x2);
+    printf("y2 = ");
+    scanf_s("%d", &y2);
+    a = fabs(x2 - x1);
+    b = fabs(y2 - y1);
+    P = 2 * (a + b);
+    S = a * b;
+    printf("P = %d, S = %d \n", P, S);
+
+    int x1, x2, y1, y2, x3, y3;
+    double a, b, c, p, s;
+    printf("5. This program searches for the area and perimeter of a triangle with the coordinates.\n");
+    printf("x1 = ");
+    scanf_s("%d", &x1);
+    printf("y1 = ");
+    scanf_s("%d", &y1);
+    printf("x2 = ");
+    scanf_s("%d", &x2);
+    printf("y2 = ");
+    scanf_s("%d", &y2);
+    printf("x3 = ");
+    scanf_s("%d", &x3);
+    printf("y3 = ");
+    scanf_s("%d", &y3);
+    a = sqrt(pow((x2 - x1), 2) + pow((y2 - y1), 2));
+    b = sqrt(pow((x3 - x2), 2) + pow((y3 - y2), 2));
+    c = sqrt(pow((x1 - x3), 2) + pow((y1 - y3), 2));
+    p = a + b + c;
+    s = ((x1 - x3) * (y2 - y3) - (x2 - x3) * (y1 - y3)) / 2;
+    printf("P = %lf, S = %lf \n", p, s);
+}
