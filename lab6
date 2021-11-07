@@ -1,0 +1,96 @@
+#include <stdio.h>
+#include <math.h>
+
+int main()
+{
+    /*
+    int A, B;
+    printf("1.This program swaps the values of objects.\n");
+    printf("A = ");
+    scanf_s("%d", &A);
+    printf("B = ");
+    scanf_s("%d", &B);
+    A = A ^ B;
+    B = B ^ A;
+    A = A ^ B;
+    printf("A = %d, B = %d", A, B);
+    */
+
+    /*
+    int A, B, C;
+    printf("2.This program swaps the values of objects (A -> B, B -> C, C -> A).\n");
+    printf("A = ");
+    scanf_s("%d", &A);
+    printf("B = ");
+    scanf_s("%d", &B);
+    printf("C = ");
+    scanf_s("%d", &C);
+    A = A ^ B;
+    B = A ^ B;
+    A = A ^ B;
+    A = A ^ C;
+    C = A ^ C;
+    A = A ^ C;
+    printf("A = %d, B = %d, C = %d", A, B, C);
+    */
+
+    /*
+    int A, B, C;
+    printf("3.This program swaps the values of objects (A -> C, C -> B, B -> A).\n");
+    printf("A = ");
+    scanf_s("%d", &A);
+    printf("B = ");
+    scanf_s("%d", &B);
+    printf("C = ");
+    scanf_s("%d", &C);
+    A = A ^ C;
+    C = A ^ C;
+    A = A ^ C;
+    B = B ^ A;
+    A = B ^ A;
+    B = B ^ A;
+    printf("A = %d, B = %d, C = %d", A, B, C);
+    */
+
+    /*
+    int x, y;
+    printf("4.This program searches for unknown y from x by function y = 3x^6 - 6x^2 - 7.\n");
+    printf("x = ");
+    scanf_s("%d", &x);
+    y = 3 * pow(x, 6) - 6 * pow(x, 2) - 7;
+    printf("y = %d", y);
+    */
+
+    /*
+    int x, y;
+    printf("5.This program searches for unknown y from x by function y = 4(x-3)^6 - 7(x-3)^3 + 2.\n");
+    printf("x = ");
+    scanf_s("%d", &x);
+    y = 4 * pow(x - 3, 6) - 7 * pow(x - 3, 3) + 2;
+    printf("y = %d", y);
+    */
+
+    /*
+    int A, help;
+    printf("6.This program searches for A^8.\n");
+    printf("A = ");
+    scanf_s("%d", &A);
+    help = A * A;
+    A = help * help;
+    help = A * A;
+    printf("A^8 = %d", help);
+    */
+
+    /*
+    int A, help1, help2;
+    printf("7.This program searches for A^15.\n");
+    printf("A = ");
+    scanf_s("%d", &A);
+    help1 = A * A * A;
+    help2 = help1 * help1;
+    help2 = help2 * help2;
+    A = help1 * help2;
+    printf("A^8 = %d", A);
+    */
+
+}
