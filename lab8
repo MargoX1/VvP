@@ -1,0 +1,64 @@
+#include <stdio.h>
+
+int main()
+{
+    /*
+    int bytes;
+    printf("1. The file size in bytes is given. This program searches for the number of full kilobytes that a given file occupies.\n");
+    printf("Size in bytes: ");
+    scanf_s("%d", &bytes);
+    int kb = (double)bytes / 1024;
+    double kb_ost = bytes % 1024;
+    if (kb_ost != 0)
+        kb += 1;
+    printf("Size in kilobytes: %d", kb);
+    */
+
+    /*
+    int A, B, num;
+
+    printf("2. Positive integers A and B (A > B) are given. On a segment of length A, the maximum possible number of segments of length B is placed (without overlaps).\n");
+    printf("This program searches for the number of segments B placed on segment A.\n");
+    printf("A = ");
+    scanf_s("%d", &A);
+    printf("B = ");
+    scanf_s("%d", &B);
+    num = A / B;
+    printf("Answer: %d", num);
+    */
+
+    /*
+    int A, B, num;
+
+    printf("3. Positive integers A and B (A > B) are given. On a segment of length A, the maximum possible number of segments of length B is placed (without overlaps).\n");
+    printf("This program searches for the length of the unoccupied part of the segment A.\n");
+    printf("A = ");
+    scanf_s("%d", &A);
+    printf("B = ");
+    scanf_s("%d", &B);
+    num = A / B;
+    int len = A - (B * num);
+    printf("Answer: %d", len);
+    */
+
+    /*
+    int x;
+
+    printf("4. A two-digit number is given. This program outputs the number obtained by rearranging the digits of the original number.\n");
+    printf("Number: ");
+    scanf_s("%d", &x);
+    x = (x % 10) * 10 + (x / 10);
+    printf("Answer: %d", x);
+    */
+
+    /*
+    int x;
+
+    printf("5. A three-digit number is given. It crossed out the first digit on the left and attributed it to the right. This program outputs the resulting number.\n");
+    printf("Number: ");
+    scanf_s("%d", &x);
+    int help = x / 100;
+    x = (x - help * 100) * 10 + help;
+    printf("Answer: %d", x);
+    */
+}
