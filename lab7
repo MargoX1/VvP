@@ -1,0 +1,96 @@
+#include <stdio.h>
+
+#define pi 3.14
+
+int main()
+{
+    /*
+    int degrees;
+    double radians;
+    
+    printf("1. This program determines the value of angle a in radians for a given value of angle a in degrees (0 < a < 360; 180 degrees = 3.14 radians).\n");
+    printf("Angle a in degrees = ");
+    scanf_s("%d", &degrees);
+    radians = (degrees * pi) / 180;
+    printf("Angle a in radians = %lf\n", radians);
+    */
+
+    /*
+    double radians, degrees;
+
+    printf("2. This program determines the value of angle a in degrees for a given value of angle a in radians (0 < a < 2 * 3.14; 180 degrees = 3.14 radians).\n");
+    printf("Angle a in radians = ");
+    scanf_s("%lf", &radians);
+    degrees = (radians * 180) / pi;
+    printf("Angle a in degrees = %lf\n", degrees);
+    */
+
+    /*
+    int X, A, Y;
+    double one_kg, Y_kg;
+
+    printf("3. It is known that X kg of sweets costs A rubles.\n");
+    printf("This program determines how much 1 kg and Y kg of the same candies cost.\n");
+    printf("X = ");
+    scanf_s("%d", &X);
+    printf("A = ");
+    scanf_s("%d", &A);
+    printf("Y = ");
+    scanf_s("%d", &Y);
+    one_kg = (double) A / X;
+    Y_kg = one_kg * Y;
+    printf("1 kg of the candies costs %lf, %d of the candies costs %lf", one_kg, Y, Y_kg);
+    */
+
+    /*
+    int V1, V2, S, S1, T;
+
+    printf("4. The speed of the first car is V1 km/h, the second is V2 km/h, the distance   between them is S km. \n");
+    printf("This program determines the distance between them in T hours as if the cars are moving away from each other. \n");
+    printf("V1 = ");
+    scanf_s("%d", &V1);
+    printf("V2 = ");
+    scanf_s("%d", &V2);
+    printf("S = ");
+    scanf_s("%d", &S);
+    printf("T = ");
+    scanf_s("%d", &T);
+    S1 = S + (V1 + V2) * T;
+    printf("The distance = %d", S1);
+    */
+
+    /*
+    int A, B;
+
+    printf("5. This program solves the equation: A*x + B = 0.\n");
+    printf("Enter A (A != 0): ");
+    scanf_s("%d", &A);
+    printf("Enter B:  ");
+    scanf_s("%d", &B);
+    double x = (double)(-B) / A;
+    printf("x = %lf", x);
+    */
+
+    /*
+    int A1, A2, B1, B2, C1, C2;
+
+    printf("6. This program solves the system of equations:\n");
+    printf("A1*x + B1*y = C1");
+    printf("A2*x + B2*y = C2");
+    printf("A1 = ");
+    scanf_s("%d", &A1);
+    printf("B1 = ");
+    scanf_s("%d", &B1);
+    printf("C1 = ");
+    scanf_s("%d", &C1);
+    printf("A2 = ");
+    scanf_s("%d", &A2);
+    printf("B2 = ");
+    scanf_s("%d", &B2);
+    printf("C2 = ");
+    scanf_s("%d", &C2);
+    double x = double (C2 * B1 - B2 * C1) / (B1 * A2 - B2 * A1);
+    double y = ((double) C1 - (double) A1 * x) / B1;
+    printf("%lf, %lf", x, y);
+    */
+}
