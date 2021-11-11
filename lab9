@@ -1,0 +1,77 @@
+#include <stdio.h>
+#include <math.h>
+
+int main()
+{
+	/*
+	int N;
+	printf("1. N seconds have passed since the beginning of the day.\n");
+	printf("This program searches for the number of seconds that have passed since the beginning of the last minute.\n");
+	printf("N is an integer. N = ");
+	scanf_s("%d", &N);
+	int min = N % 60;
+	printf("Answer: %d min", min);
+	*/
+
+	/*
+	int K;
+	printf("2. The days of the week are numbered as follows: 0 - Sunday, 1 - Monday,\n");
+	printf("2 - Tuesday, . . . , 6 - Saturday. This program determines the number of\n");
+	printf("the day of the week for the K-th day of the year, if it is known that\n");
+	printf("January 1 was Monday this year. Enter an integer K lying in the range 1-365.\n");
+	printf("K = ");
+	scanf_s("%d", &K);
+	int day = K % 7;
+	printf("Answer: %d", day);
+	*/
+
+	/*
+	int K, N;
+	printf("3. The days of the week are numbered as follows: 1 - Monday, 2 - Tuesday,\n");
+	printf(". . . , 6 - Saturday, 7 - Sunday. This program determines the number of the day\n");
+	printf("of the week for the K-th day of the year, if it is known that this year January\n");
+	printf("1 was the day of the week with the number N. Given an integer K lying in the\n");
+	printf("range 1-365, and an integer N lying in the range 1-7.\n");
+	printf("K = ");
+	scanf_s("%d", &K);
+	printf("N = ");
+	scanf_s("%d", &N);
+	int day = K % 7 + N - 1;
+	if (day == 0)
+		day = 7;
+	else if (day > 7)
+		day -= 7;
+	printf("Answer: %d", day);
+	*/
+
+	/*
+	int A, B, C;
+	printf("4. Positive integers A, B, and C. are given. The maximum possible number of squares with side C (without overlays) is placed on a rectangle of size A * B.\n");
+	printf("This program searches for the number of squares placed on the rectangle, as well as the area of the unoccupied part of the rectangle.\n");
+	printf("A = ");
+	scanf_s("%d", &A);
+	printf("B = ");
+	scanf_s("%d", &B);
+	printf("C = ");
+	scanf_s("%d", &C);
+	int a = A / C;
+	int b = B / C;
+	int count = a * b;
+	int ost = A * B - C * C * count;
+	printf("The number of squares is equal to %d\n", count);
+	printf("The area of the unoccupied part of the rectangle is equal to %d\n", ost);
+	*/
+
+	/*
+	int y, th;
+	printf("5. The number of a certain year is given (a positive integer). For example, the beginning of the 20th century was 1901.\n");
+	printf("This program determines the century number corresponding to the year.\n");
+	printf("Enter the year: ");
+	scanf_s("%d", &y);
+	if (y % 100 == 0)
+		th = y / 100;
+	else
+		th = y / 100 + 1;
+	printf("Answer: %d", th);
+	*/
+}
