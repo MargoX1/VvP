@@ -1,0 +1,97 @@
+#include <stdio.h>
+
+int main()
+{
+	/*
+	int A, B;
+	printf("1. Two integers are given: A, B. This program verifies the truth of the statement: Inequalities A > 2 and B <= 3 are valid.\n");
+	printf("A = ");
+	scanf_s("%d", &A);
+	printf("B = ");
+	scanf_s("%d", &B);
+	if (A > 2 && B <= 3)
+		printf("Yes");
+	else
+		printf("No");
+	*/
+
+	/*
+	int A, B, C;
+	printf("2. Three integers are given: A, B, C. This program verifies the truth of the statement: The double inequality A < B < C is true.\n");
+	printf("A = ");
+	scanf_s("%d", &A);
+	printf("B = ");
+	scanf_s("%d", &B);
+	printf("C = ");
+	scanf_s("%d", &C);
+	if (A < B && B < C)
+		printf("Yes");
+	else
+		printf("No");
+	*/
+
+	/*
+	int num;
+	printf("3. A positive integer is given. This program verifies the truth of the statement: This number is an even two-digit.\n");
+	printf("Enter the number: ");
+	scanf_s("%d", &num);
+	if (num % 2 == 0 && num % 100 == num)
+		printf("Yes");
+	else
+		printf("No");
+	*/
+
+	/*
+	int num;
+	printf("4. A three-digit number is given. This program verifies the truth of the statement: The digits of this number form an increasing or decreasing sequence.\n");
+	printf("Enter the number: ");
+	scanf_s("%d", &num);
+	if (num % 10 < num / 10 % 10 && num / 10 % 10 < num / 100)
+		printf("Yes");
+	else if (num % 10 > num / 10 % 10 && num / 10 % 10 > num / 100)
+		printf("Yes");
+	else
+		printf("No");
+	*/
+
+	/*
+	int num;
+	printf("5. A four-digit number is given. This program verifies the truth of the statement: This number is read equally from left to right and from right to left.\n");
+	printf("Enter the number: ");
+	scanf_s("%d", &num);
+	if (num / 1000 == num % 10 && num / 100 % 10 == num / 10 % 10)
+		printf("Yes");
+	else
+		printf("No");
+	*/
+
+	/*
+	int a, b, c;
+	printf("6. The integers a, b, c are given, which are the sides of some triangle. This program verifies the truth of the statement: A triangle with sides a, b, c is rectangular.\n");
+	printf("a = ");
+	scanf_s("%d", &a);
+	printf("b = ");
+	scanf_s("%d", &b);
+	printf("c = ");
+	scanf_s("%d", &c);
+	if ((a*a == b*b + c*c)||(b * b == a * a + c * c) || (c * c == a * a + b * b))
+		printf("Yes");
+	else
+		printf("No");
+	*/
+
+	/*
+	int a, b, c;
+	printf("7. The integers a, b, c are given. This program verifies the truth of the statement: There is a triangle with sides a, b, c.\n");
+	printf("a = ");
+	scanf_s("%d", &a);
+	printf("b = ");
+	scanf_s("%d", &b);
+	printf("c = ");
+	scanf_s("%d", &c);
+	if (a+b>c && a+c>b && b+c>a)
+		printf("Yes");
+	else
+		printf("No");
+	*/
+}
