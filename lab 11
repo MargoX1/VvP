@@ -1,0 +1,122 @@
+#include <stdio.h>
+#include <math.h>
+
+int main()
+{
+    /*
+    int A, B;
+    printf("1. Two integer variables are given: A and B. If their values are not equal, theneach variable is assigned the greater of these values, and if they are equal,   then zero values are assigned to the variables. This program outputs new values of variables A and B.\n");
+    printf("A = ");
+    scanf_s("%d", &A);
+    printf("B = ");
+    scanf_s("%d", &B);
+    if (A == B)
+        A = 0, B = 0;
+    else if (A < B)
+        A = B;
+    else
+        B = A;
+    printf("A = %d, B = %d", A, B);
+    */
+    
+    /*
+    float a, b, c, summ;
+    printf("2. Three numbers are given. This program is looking for the sum of the two      largest ones.\n");
+    printf("Enter the first number: ");
+    scanf_s("%f", &a);
+    printf("Enter the second number: ");
+    scanf_s("%f", &b);
+    printf("Enter the third number: ");
+    scanf_s("%f", &c);
+    if (a <= b && a <= c)
+        summ = b + c;
+    else if (b <= c && b <= a)
+        summ = a + c;
+    else
+        summ = b + a;
+    printf("Answer: %f", summ);
+    */
+    
+    /*
+    float A, B, C;
+    printf("3. There are three points on the plane: A, B, C. This program determines which  of the last two points (B or C) is located closer to A, and outputs this point  and its distance from point A.\n");
+    printf("Enter A: ");
+    scanf_s("%f", &A);
+    printf("Enter B: ");
+    scanf_s("%f", &B);
+    printf("Enter C: ");
+    scanf_s("%f", &C);
+    float AB = fabs(A - B);
+    float AC = fabs(A - C);
+    if (AB < AC)
+        printf("Answer: the distance between A and B is equal to %f", AB);
+    else if (AC < AB)
+        printf("Answer: the distance between A and B is equal to %f", AC);
+    else
+        printf("Answer: the distances are same and equal to %f", AC);
+    */
+
+    /*
+    int x, y;
+    printf("4. The coordinates of a point that does not lie on the coordinate axes OX and OYare given. This program determines the number of the coordinate quarter in whichthis point is located.\n");
+    printf("Enter x: ");
+    scanf_s("%d", &x);
+    printf("Enter y: ");
+    scanf_s("%d", &y);
+    if (y > 0)
+    {
+        if (x > 0)
+            printf("Answer: 1 quarter.");
+        else
+            printf("Answer: 2 quarter.");
+    }
+    else
+    {
+        if (x > 0)
+            printf("Answer: 4 quarter.");
+        else
+            printf("Answer: 3 quarter.");
+    }
+    */
+    
+    /*
+    int num;
+    printf("5. An integer is given. This program outputs its string-a description of the    form <<negative even number>>, <<zero number>>, <<positive odd number>>, etc.\n");
+    printf("Enter the number: ");
+    scanf_s("%d", &num);
+    printf("Answer: ");
+    if (num == 0)
+        printf("zero ");
+    else
+    {
+        if (num < 0)
+            printf("negative ");
+        if (num > 0)
+            printf("positive ");
+        if (num % 2 == 0)
+            printf("even ");
+        if (num % 2 != 0)
+            printf("odd ");
+    }
+    printf("number.");
+    */
+
+    /*
+    int num;
+    printf("6. An integer in the range 1-999 is given. This program outputs its string      description of the form <<even two-digit number>>, <<odd three-digit number>>,  etc.\n");
+    printf("Enter the number: ");
+    scanf_s("%d", &num);
+    printf("Answer: ");
+    if (num % 2 == 0)
+        printf("even ");
+    if (num % 2 != 0)
+        printf("odd ");
+    if (num / 100 != 0)
+        printf("three-digit ");
+    else if (num / 100 == 0 && num / 10 != 0)
+        printf("two-digit ");
+    else
+        printf("one-digit ");
+    printf("number.");
+    */
+}
