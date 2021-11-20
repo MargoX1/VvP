@@ -1,0 +1,527 @@
+#include <stdio.h>
+
+int main()
+{
+    /*
+    int day, month;
+    printf("1. Given the number of the day - an     integer from 1 to 31 and the month - an integer in the range 1-12 (1 - January, 2 - February, etc.). This program       outputs the date as text (for example, <<January fifth>>).\n");
+    printf("Enter the number of the day: ");
+    scanf_s("%d", &day);
+    printf("Enter the number of the month: ");
+    scanf_s("%d", &month);
+    switch (month)
+    {
+    case 1:
+        printf("January ");
+        break;
+    case 2:
+        printf("February ");
+        break;
+    case 3:
+        printf("March ");
+        break;
+    case 4:
+        printf("April ");
+        break;
+    case 5:
+        printf("May ");
+        break;
+    case 6:
+        printf("June ");
+        break;
+    case 7:
+        printf("July ");
+        break;
+    case 8:
+        printf("August ");
+        break;
+    case 9:
+        printf("September ");
+        break;
+    case 10:
+        printf("October ");
+        break;
+    case 11:
+        printf("November ");
+        break;
+    case 12:
+        printf("December ");
+        break;
+    }
+    switch (day)
+    {
+    case 1:
+        printf("first");
+        break;
+    case 2:
+        printf("second");
+        break;
+    case 3:
+        printf("third");
+        break;
+    case 4:
+        printf("fourth");
+        break;
+    case 5:
+        printf("fifth");
+        break;
+    case 6:
+        printf("sixth");
+        break;
+    case 7:
+        printf("seventh");
+        break;
+    case 8:
+        printf("eighth");
+        break;
+    case 9:
+        printf("ninth");
+        break;
+    case 10:
+        printf("tenth");
+        break;
+    case 11:
+        printf("eleventh");
+        break;
+    case 12:
+        printf("twelfth");
+        break;
+    case 13:
+        printf("thirteenth");
+        break;
+    case 14:
+        printf("fourteenth");
+        break;
+    case 15:
+        printf("fifteenth");
+        break;
+    case 16:
+        printf("sixteenth");
+        break;
+    case 17:
+        printf("seventeenth");
+        break;
+    case 18:
+        printf("eighteenth");
+        break;
+    case 19:
+        printf("nineteenth");
+        break;
+    case 20:
+        printf("twentieth");
+        break;
+    case 21:
+        printf("twenty-first");
+        break;
+    case 22:
+        printf("twenty-second");
+        break;
+    case 23:
+        printf("twenty-third");
+        break;
+    case 24:
+        printf("twenty-fourth");
+        break;
+    case 25:
+        printf("twenty-fifth");
+        break;
+    case 26:
+        printf("twenty-sixth");
+        break;
+    case 27:
+        printf("twenty-seventh");
+        break;
+    case 28:
+        printf("twenty-eighth");
+        break;
+    case 29:
+        printf("twenty-ninth");
+        break;
+    case 30:
+        printf("thirtieth");
+        break;
+    case 31:
+        printf("thirty-first");
+        break;
+    }
+    */
+
+    /*
+    char C;
+    int M;
+    const char N = 'N', W = 'W', S = 'S', E = 'E';
+    printf("2. The robot can move in four directions (N - north, W - west, S - south, E -   east) and receive three digital commands: 0 - continue moving, 1 - turn left,   -1 - turn right. The symbol C is given — the initial direction of the robot and the integer M is the command sent to it. This program outputs the direction of  the robot after executing the received command.\n");
+    printf("Enter C: ");
+    scanf_s("%c", &C, 1);
+    printf("Enter M: ");
+    scanf_s("%d", &M);
+    switch (C)
+    {
+    case N:
+        switch (M)
+        {
+        case 1:
+            printf("W \n");
+            break;
+        case 0:
+            printf("N \n");
+            break;
+        case -1:
+            printf("E \n");
+            break;
+        }
+        break;
+    case W:
+        switch (M)
+        {
+        case 1:
+            printf("S \n");
+            break;
+        case 0:
+            printf("W \n");
+            break;
+        case -1:
+            printf("N \n");
+            break;
+        }
+        break;
+    case S:
+        switch (M)
+        {
+        case 1:
+            printf("E\n");
+            break;
+        case 0:
+            printf("S\n");
+            break;
+        case -1:
+            printf("W\n");
+            break;
+        }
+        break;
+    case E:
+        switch (M)
+        {
+        case 1:
+            printf("N\n");
+            break;
+        case 0:
+            printf("E\n");
+            break;
+        case -1:
+            printf("S\n");
+            break;
+        }
+        break;
+    }
+    */
+
+    /*
+    int num;
+    printf("3. An integer in the range of 10-40 is given, which determines the number of    training tasks on a certain topic. This program outputs a string describing the specified number of tasks, ensuring that the number is correctly matched with   the words <<uchebnyye zadaniya>>, for example: 18 — <<vosemnadcat' ychebnyh zadaniy>>.\n");
+    printf("Enter the number of training tasks: ");
+    scanf_s("%d", &num);
+    switch (num)
+    {
+    case 10:
+        printf("Desayt' ");
+        break;
+    case 11:
+        printf("Odinnadcat' ");
+        break;
+    case 12:
+        printf("Dvenadcat' ");
+        break;
+    case 13:
+        printf("Trinadcat' ");
+        break;
+    case 14:
+        printf("Chetyrnadcat' ");
+        break;
+    case 15:
+        printf("Pyatnadcat' ");
+        break;
+    case 16:
+        printf("Shestnadcat' ");
+        break;
+    case 17:
+        printf("Semnadcat' ");
+        break;
+    case 18:
+        printf("Vosemnadcat' ");
+        break;
+    case 19:
+        printf("Devyatnadcat' ");
+        break;
+    case 20:
+        printf("Dvadcat' ");
+        break;
+    case 21:
+        printf("Dvadcat' odno ");
+        break;
+    case 22:
+        printf("Dvadcat' dva ");
+        break;
+    case 23:
+        printf("Dvadcat' tri ");
+        break;
+    case 24:
+        printf("Dvadcat' chetyre ");
+        break;
+    case 25:
+        printf("Dvadcat' pyat' ");
+        break;
+    case 26:
+        printf("Dvadcat' shest' ");
+        break;
+    case 27:
+        printf("Dvadcat' sem' ");
+        break;
+    case 28:
+        printf("Dvadcat' vosem' ");
+        break;
+    case 29:
+        printf("Dvadcat' devyat' ");
+        break;
+    case 30:
+        printf("Tridcat' ");
+        break;
+    case 31:
+        printf("Tridcat' odno ");
+        break;
+    case 32:
+        printf("Tridcat' dva ");
+        break;
+    case 33:
+        printf("Tridcat' tri ");
+        break;
+    case 34:
+        printf("Tridcat' chetyre ");
+        break;
+    case 35:
+        printf("Tridcat' pyat' ");
+        break;
+    case 36:
+        printf("Tridcat' shest' ");
+        break;
+    case 37:
+        printf("Tridcat' sem' ");
+        break;
+    case 38:
+        printf("Tridcat' vosem' ");
+        break;
+    case 39:
+        printf("Tridcat' devyat' ");
+        break;
+    case 40:
+        printf("Sorok ");
+        break;
+    }
+    if (num / 10 != 1 && num % 10 == 1)
+        printf("uchebnoye zadaniye\n");
+    else if (num / 10 != 1 && (num % 10 == 2 || num % 10 == 3 || num % 10 == 4))
+        printf("uchebnyh zadaniya\n");
+    else
+        printf("uchebnyh zadaniy\n");
+    */
+    
+    /*
+    int num;
+    printf("4. An integer in the range 100-999 is given. This program outputs a string      description of this number, for example: 256 - <<two hundred and fifty six>>,   814 - <<eight hundred and fourteen>>.\n");
+    printf("Enter the number: ");
+    scanf_s("%d", &num);
+    switch (num / 100)
+    {
+    case 1:
+        printf("One hundred ");
+        break;
+    case 2:
+        printf("Two hundred ");
+        break;
+    case 3:
+        printf("Three hundred ");
+        break;
+    case 4:
+        printf("Four hundred ");
+        break;
+    case 5:
+        printf("Five hundred ");
+        break;
+    case 6:
+        printf("Six hundred ");
+        break;
+    case 7:
+        printf("Seven hundred ");
+        break;
+    case 8:
+        printf("Eight hundred ");
+        break;
+    case 9:
+        printf("Nine hundred ");
+        break;
+    }
+    switch (num / 10 % 10)
+    {
+    case 1:
+        switch (num % 10)
+        {
+        case 0:
+            printf("and ten");
+            break;
+        case 1:
+            printf("and eleven");
+            break;
+        case 2:
+            printf("and twelve");
+            break;
+        case 3:
+            printf("and thirteen");
+            break;
+        case 4:
+            printf("and fourteen");
+            break;
+        case 5:
+            printf("and fifteen");
+            break;
+        case 6:
+            printf("and sixteen");
+            break;
+        case 7:
+            printf("and seventeen");
+            break;
+        case 8:
+            printf("and eighteen");
+            break;
+        case 9:
+            printf("and nineteen");
+            break;
+        }
+        break;
+    case 2:
+        printf("and twenty");
+        break;
+    case 3:
+        printf("and thirty");
+        break;
+    case 4:
+        printf("and fourty");
+        break;
+    case 5:
+        printf("and fifty");
+        break;
+    case 6:
+        printf("and sixty");
+        break;
+    case 7:
+        printf("and seventy");
+        break;
+    case 8:
+        printf("and eighty");
+        break;
+    case 9:
+        printf("and ninety");
+    }
+    if (num / 10 % 10)
+    {
+        switch (num % 10)
+        {
+        case 1:
+            printf("-one");
+            break;
+        case 2:
+            printf("-two");
+            break;
+        case 3:
+            printf("-three");
+            break;
+        case 4:
+            printf("-four");
+            break;
+        case 5:
+            printf("-five");
+            break;
+        case 6:
+            printf("-six");
+            break;
+        case 7:
+            printf("-seven");
+            break;
+        case 8:
+            printf("-eight");
+            break;
+        case 9:
+            printf("-nine");
+            break;
+        }
+    }
+    */
+    
+    /*
+    int num;
+    printf("5. The Eastern calendar adopted a 60-year cycle consisting of 12-year subcycles,designated by the names of the colors: green, red, yellow, white and black. In  each sub-cycle, the years bear the names of animals: rats, cows, tigers, hares, dragons, snakes, horses, sheep, monkeys, chickens, dogs and pigs. According to  the number of the year, e is its name, if 1984 is the beginning of the cycle:   <<the year of the green rat>>.\n");
+    printf("Enter the number of the year: ");
+    scanf_s("%d", &num);
+    printf("The year of the ");
+    switch (num % 10)
+    {
+    case 0:
+    case 1:
+        printf("white ");
+        break;
+    case 2:
+    case 3:
+        printf("black ");
+        break;
+    case 4:
+    case 5:
+        printf("green ");
+        break;
+    case 6:
+    case 7:
+        printf("red ");
+    case 8:
+    case 9:
+        printf("yellow ");
+    
+    }
+    switch ((num+8) % 12)
+    {
+    case 0:
+        printf("rat");
+        break;
+    case 1:
+        printf("cow");
+        break;
+    case 2:
+        printf("tiger");
+        break;
+    case 3:
+        printf("hare");
+        break;
+    case 4:
+        printf("dragon");
+        break;
+    case 5:
+        printf("snake");
+        break;
+    case 6:
+        printf("horse");
+        break;
+    case 7:
+        printf("sheep");
+        break;
+    case 8:
+        printf("monkey");
+        break;
+    case 9:
+        printf("chicken");
+        break;
+    case 10:
+        printf("dog");
+        break;
+    case 11:
+        printf("pig");
+        break;
+    }
+    */
+}
