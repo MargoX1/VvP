@@ -1,0 +1,77 @@
+#include <stdio.h>
+#include <math.h>
+
+
+int main()
+{
+    /*
+    float num, help, one_tenth;
+    printf("1. Given a real number - the price of 1 kg of sweets. This program outputs the  cost of 0.1, 0.2, . . . , 1 kg of candy.\n");
+    printf("Enter the real number: ");
+    scanf_s("%f", &num);
+    one_tenth = num * 0.1;
+    printf("The answer: ");
+    for (help = one_tenth; help < num; help += one_tenth)
+    {
+        printf("%f ", help);
+    }
+    printf(", %f", num);
+    */
+    
+    /*
+    int N, i = 1;
+    float help, multi = 1;
+    printf("2. Given an integer N (> 0). This program is looking for a work 1.1 * 1.2 *     * 1.3 * . . . ( N multipliers).\n");
+    printf("Enter N: ");
+    scanf_s("%d", &N);
+    for (help = 1.1; i <= N; i += 1)
+    {
+        multi *= help;
+        help += 0.1;
+    }
+    printf("The answer: %f", multi);
+    */
+
+    /*
+    int N, summ = 0, num;
+    printf("3. Given an integer N (> 0). This program searches for the square of a given    number using the following formula to calculate it: N2 = 1 + 3 + 5 + . . . +    + (2*N - 1). After adding each term to the sum, it outputs the current value of the sum.\n");
+    printf("Enter N: ");
+    scanf_s("%d", &N);
+    for (num = 1; num <= 2*N-1; num += 2)
+    {
+        printf("%d\n", num);
+        summ += num;
+    }
+    printf("N^2 = %d \n", summ);
+   */
+    
+    /*
+    float A, num, summ = 1;
+    int N;
+    printf("4. Given a real number A and an integer N (> 0). This program searches for the  sum of 1 + A + A^2 + A^3 + . . . + A^N using a single loop.\n");
+    printf("Enter A: ");
+    scanf_s("%f", &A);
+    printf("Enter N: ");
+    scanf_s("%d", &N);
+    for (num = A; num <= pow(A, N) && A != 1; num *= A)
+    {
+        summ += num;
+    }
+    printf("The answer: %f", summ);
+    */
+
+    /*
+    float A, num, summ = 1;
+    int N;
+    printf("5. Given a real number A and an integer N (> 0). Using a single loop, this      program searches for the value of the expression 1 - A + A2 - A3 + . ..+- AN.   The conditional operator is not used.\n");
+    printf("Enter A: ");
+    scanf_s("%f", &A);
+    printf("Enter N: ");
+    scanf_s("%d", &N);
+    for (num = -A; fabs(num) <= pow(A, N) && summ != 0; num *= -A)
+    {
+        summ += num;
+    }
+    printf("The answer: %f", summ);
+    */
+}
