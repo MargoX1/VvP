@@ -1,0 +1,94 @@
+#include <stdio.h>
+
+int main()
+{
+    /*
+    int a, b, i, help;
+    printf("1. Positive integers A and B (A < B) are given. This program outputs all        integers from A to B inclusive; each number is output as many times as its value (for example, the number 3 is output 3 times).\n");
+    printf("Enter A: ");
+    scanf_s("%d", &a);
+    printf("Enter B: ");
+    scanf_s("%d", &b);
+    for (i = a; i <= b; i++)
+    {
+        for (help = i; help != 0; help--)
+        {
+            printf("%d ", i);
+        }
+        printf("\n");
+    }
+    */
+
+    /*
+    int a, b, ost, help;
+    printf("2. Positive numbers A and B are given (A > B). On a segment of length A, the    maximum possible number of segments of length B is placed (without overlaps).   Without using multiplication and division operations, this program searches the length of the unoccupied part of the segment A.\n");
+    printf("Enter A: ");
+    scanf_s("%d", &a);
+    printf("Enter B: ");
+    scanf_s("%d", &b);
+    for (help = 0; help < a; help += b)
+    {}
+    if (help > a)
+        help -= b;
+    ost = a - help;
+    printf("The answer: %d", ost);
+    */
+
+    /*    int n, summ = 0, k = 0, help;
+    printf("3. Given an integer N (> 1). This program outputs the smallest of the integers K for which the sum is 1 + 2 + . . . + K will be greater than or equal to N, and this sum itself.\n");
+    printf("Enter N: ");
+    scanf_s("%d", &n);
+    while(summ < n)
+    {
+        ++k;
+        summ += k;
+    }
+    printf("The answer: K = %d, sum = %d \n", k, summ);
+    */
+
+    /*
+    float p, s = 1000, help;
+    int k = 0;
+    printf("4. The initial deposit in the bank is 1000 rubles. After each month, the        deposit amount increases by P percent of the available amount (P is a real      number, 0 < P < 25). For this P, this program determines how many months the    deposit amount will exceed 1100 rubles, and outputs the found number of months K (integer) and the total amount of the deposit S (real number).\n");
+    printf("Enter P : ");
+    scanf_s("%f", &p);
+    while (s < 1100)
+    {
+        k += 1;
+        help = s * p/100;
+        s += help;
+    }
+    printf("The answer: K = %d, S = %f\n", k, s);
+    */
+
+    /*
+    int a, b, ost = 1, help;
+    printf("5. Positive integers A and B are given. This program searches for their greatest common divisor (GCD) using Euclid's algorithm.\n");
+    printf("Enter A: ");
+    scanf_s("%d", &a);
+    printf("Enter B: ");
+    scanf_s("%d", &b);
+    while (ost != 0)
+    {
+        ost = a % b;
+        a = b;
+        b = ost;
+    }
+    printf("The answer: %d\n", a);
+    */
+
+    /*
+    int n, k = 2, help = 0, a = 0, b = 1;
+    printf("6. Given an integer N (> 1), which is a Fibonacci number. This program  searches for an integer K the ordinal number of the Fibonacci number N.\n");
+    printf("Enter N: ");
+    scanf_s("%d", &n);
+    while (help != n)
+    {
+        k++;
+        help = a + b;
+        a = b;
+        b = help;
+    }
+    printf("The answer: %d", k);
+    */
+ }
