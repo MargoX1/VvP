@@ -1,0 +1,140 @@
+#include <stdio.h>
+
+float PowerA3(float A)
+{
+	float B = A * A * A;
+	return B;
+}
+
+int Sign(float X)
+{
+	if (X < 0)
+		return -1;
+	if (X == 0)
+		return 0;
+	if (X > 0)
+		return 1;
+
+}
+
+float RingS(float R1, float R2)
+{
+	float S = 3.14 * (R1 * R1 - R2 * R2);
+	return S;
+}
+
+int Quarter(float x, float y)
+{
+	if (x > 0 && y > 0)
+		printf("1 quarter\n");
+	if (x < 0 && y > 2)
+		printf("2 quarter\n");
+	if (x < 0 && y < 0)
+		printf("3 quarter\n");
+	if (x > 0 && y < 0)
+		printf("4 quarter\n");
+	return 0;
+}
+
+float Fact2(int N)
+{
+	int fact = 1;
+	if (N % 2 != 0)
+	{
+		for (int i = 1; i <= N; i += 2)
+			fact *= i;
+	}
+	else
+	{
+		for (int i = 2; i <= N; i += 2)
+			fact *= i;
+	}
+	return fact;
+}
+
+int main()
+{
+	/*
+	float n1, n2, n3, n4, n5;
+	printf("1. This program describes the function PowerA3(A, B), which calculates thethird power of the number A and returns it in the variable B (A is the input, B is the output parameter; both parameters are real). With this function, it searches   for the third powers of five given numbers.\n");
+	printf("Enter the first number: ");
+	scanf_s("%f", &n1);
+	printf("Enter the second number: ");
+	scanf_s("%f", &n2);
+	printf("Enter the third number: ");
+	scanf_s("%f", &n3);
+	printf("Enter the fourth number: ");
+	scanf_s("%f", &n4);
+	printf("Enter the fifth number: ");
+	scanf_s("%f", &n5);
+	n1 = PowerA3(n1);
+	n2 = PowerA3(n2);
+	n3 = PowerA3(n3);
+	n4 = PowerA3(n4);
+	n5 = PowerA3(n5);
+	printf("The answer: 1) %f, 2) %f, 3) %f, 4) %f, 5) %f\n", n1, n2, n3, n4, n5);
+	*/
+
+	/*
+	float A, B;
+	printf("2. This program describes an integer type Sign(X) function that returns the     following values for a real number X:\n");
+	printf(" - 1 if X < 0; 0 if X = 0; 1 if X > 0.\n");
+	printf("Using this function, it searches for the value of the expression Sign(A) +      + Sign(B) for the given real numbers Aand B.\n");
+	printf("Enter A: ");
+	scanf_s("%f", &A);
+	printf("Enter B: ");
+	scanf_s("%f", &B);
+	printf("The answer: %d\n", Sign(A) + Sign(B));
+	*/
+	
+	/*
+	float r1_1, r2_1, r1_2, r2_2, r1_3, r2_3;
+	printf("3. This program describes a real-type RingS(R1, R2) function that finds the areaof a ring enclosed between two circles with a common center and radii R1 and R2 (R1 and R2 are real, R1 > R2). Using the function, it searches for the areas of three rings for which external and internal radii are given. Pi = 3.14\n");
+	printf("Enter r1 for the first ring: ");
+	scanf_s("%f", &r1_1);
+	printf("Enter r2 for the first ring: ");
+	scanf_s("%f", &r2_1);
+	printf("Enter r1 for the second ring: ");
+	scanf_s("%f", &r1_2);
+	printf("Enter r2 for the second ring: ");
+	scanf_s("%f", &r2_2);
+	printf("Enter r1 for the third ring: ");
+	scanf_s("%f", &r1_3);
+	printf("Enter r2 for the third ring: ");
+	scanf_s("%f", &r2_3);
+	printf("The answer: 1) %f 2) %f, 3) %f\n", RingS(r1_1, r2_1), RingS(r1_2, r2_2), RingS(r1_3, r2_3));
+	*/
+
+	/*
+	float x1, y1, x2, y2, x3, y3;
+	printf("4. This program describes an integer-type function Quarter(x, y) that defines   the number of the coordinate quarter in which a point with nonzero real         coordinates (x, y) is located. Using this function, it searches for the numbers of coordinate quarters for three points with these non-zero coordinates.\n");
+	printf("Enter x coordinate for the first point: ");
+	scanf_s("%f", &x1);
+	printf("Enter y coordinate for the first point: ");
+	scanf_s("%f", &y1);
+	printf("Enter x coordinate for the second point: ");
+	scanf_s("%f", &x2);
+	printf("Enter y coordinate for the second point: ");
+	scanf_s("%f", &y2);
+	printf("Enter x coordinate for the third point: ");
+	scanf_s("%f", &x3);
+	printf("Enter y coordinate for the third point: ");
+	scanf_s("%f", &y3);
+	printf("The first point is located in ");
+	Quarter(x1, y1);
+	printf("The second point is located in ");
+	Quarter(x2, y2);
+	printf("The third point is located in ");
+	Quarter(x3, y3);
+	*/
+	
+	/*
+	int n;
+	printf("5. This program describes a function Fact2(N) of real type that calculates the  double factorial:\n");
+	printf("N!!= 1•3•5•. ..•N, if N is odd;");
+	printf("N!!= 2•4•6•. ..•N if N is even (N > 0 is an      integer type parameter; the real return value is used to avoid integer overflow for large values of N).\n");
+	printf("Enter the number : ");
+	scanf_s("%d", &n);
+	printf("The answer: %f", Fact2(n));
+	*/
+}
