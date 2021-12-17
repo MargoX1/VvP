@@ -1,0 +1,166 @@
+#include <stdio.h>
+#include <malloc.h>
+#include <math.h>
+
+bool work = true;
+int command;
+
+void lab16_1()
+{
+    int *M;
+    int n, i, num = 1;
+    printf("Given an integer N(> 0). This program generates and outputs an integer array of size N containing the first N positive odd numbers : 1, 3, 5...\n");
+    printf("Enter N: ");
+    scanf_s("%d", &n);
+    M = (int*)malloc(n * sizeof(int));
+    for (i = 0; i < n; i++)
+    {
+        M[i] = num;
+        num += 2;
+    }
+    printf("The array: ");
+    for (i = 0; i < n; i++)
+    {
+        printf("%d ", M[i]);
+    }
+    printf("\n");
+    printf("\n");
+}
+
+void lab16_2()
+{
+    int* M;
+    int n, d, a, i;
+    printf("An integer N(> 1) is given, as well as the first term A and the denominator D ofthe geometric progression. This program generatesand outputs an array of size N containing the N first members of this progression : A, A*D, A*D^2, A*D^3\n");
+    printf("Enter N: ");
+    scanf_s("%d", &n);
+    printf("Enter A: ");
+    scanf_s("%d", &a);
+    printf("Enter D: ");
+    scanf_s("%d", &d);
+    M = (int*)malloc(n * sizeof(int));
+    for (i = 0; i < n; i++)
+    {
+        M[i] = a;
+        a *= d;
+    }
+    printf("The array: ");
+    for (i = 0; i < n; i++)
+    {
+        printf("%d ", M[i]);
+    }
+    printf("\n");
+    printf("\n");
+}
+
+void lab16_3()
+{
+    int* M;
+    int n, a, b, i, summ;
+    printf("Given integers N(> 2), Aand B. This program generatesand outputs an integer     array of size N, the first element of which is equal to A, the second is equal  to B, and each subsequent element is equal to the sum of all the previous ones.\n");
+    printf("Enter N: ");
+    scanf_s("%d", &n);
+    printf("Enter A: ");
+    scanf_s("%d", &a);
+    printf("Enter B: ");
+    scanf_s("%d", &b);
+    M = (int*)malloc(n * sizeof(int));
+    M[0] = a;
+    M[1] = b;
+    summ = a + b;
+    for (i = 2; i < n; i++) {
+        M[i] = summ;
+        summ += summ;
+    }
+    printf("The array: ");
+    for (i = 0; i < n; i++) {
+        printf("%d ", M[i]);
+    }
+    printf("\n");
+    printf("\n");
+}
+
+void lab16_4()
+{
+    int *A;
+    int n, i, j;
+    printf("Given an array A of size N. This program outputs its elements in the            following order : A1, AN, A2, AN - 1, A3, AN - 2...\n");
+    printf("Enter N: ");
+    scanf_s("%d", &n);
+    A = (int*)malloc(n * sizeof(int));
+    j = n - 1;
+    for (i = 0; i < n; i++) {
+        printf("A[%d] = ", i);
+        scanf_s("%d", &A[i]);
+    }
+    printf("The array: ");
+    for (i = 0; i < n/2 || j == n/2; i++, j--) {
+        printf("%d ", A[i]);
+        if (j > i) {
+            printf("%d ", A[j]);
+        }
+    }
+    printf("\n");
+    printf("\n");
+}
+
+void lab16_5()
+{
+    int* A;
+    int n, i;
+    printf("Given an array A of size N. This program outputs first its elements with odd    numbers in ascending order of numbers, and then the elements with even numbers  in descending order of numbers.\n");
+    printf("Enter N: ");
+    scanf_s("%d", &n);
+    A = (int*)malloc(n * sizeof(int));
+    for (i = 0; i < n; i++) {
+        printf("A[%d] = ", i);
+        scanf_s("%d", &A[i]);
+    }
+    printf("The array: ");
+    for (i = 1; i < n; i += 2) {
+        printf("%d ", A[i]);
+    }
+    if (n % 2 == 0)
+        i = n - 2;
+    else
+        i = n - 1;
+    while (i >= 0) {
+        printf("%d ", A[i]);
+        i -= 2;
+    }
+    printf("\n");
+    printf("\n");
+}
+
+
+int main()
+{
+    while (work == true)
+    {
+        printf("Enter the task number (1-5) to go to it. To exit the program, enter 0.\n");
+        scanf_s("%d", &command);
+        printf("\n");
+        switch (command)
+        {
+        case 1:
+            lab16_1();
+            break;
+        case 2:
+            lab16_2();
+            break;
+        case 3:
+            lab16_3();
+            break;
+        case 4:
+            lab16_4();
+            break;
+        case 5:
+            lab16_5();
+            break;
+        case 0:
+            work = false;
+            break;
+        }
+    }
+}
+
